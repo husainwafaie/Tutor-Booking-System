@@ -19,7 +19,8 @@ public class Subject {
     @ManyToMany(mappedBy = "subjects")
     private Set<Tutor> tutors = new HashSet<>();
 
-    public Subject(String name) {
+    public Subject(Long id, String name) {
+        this.id = id;
         this.name = name;
     }   
 
