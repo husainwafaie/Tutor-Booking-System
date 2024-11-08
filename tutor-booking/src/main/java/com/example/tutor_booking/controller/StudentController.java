@@ -1,6 +1,7 @@
 package com.example.tutor_booking.controller;
 
 import com.example.tutor_booking.model.Student;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import com.example.tutor_booking.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -8,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/students")
 public class StudentController {
 
