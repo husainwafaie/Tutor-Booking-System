@@ -1,0 +1,45 @@
+:root {
+    --primary-orange: #ff5722;
+    --light-blue: #87CEEB;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-container {
+    min-height: 100vh;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-orange);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+.btn-secondary {
+    background-color: var(--light-blue);
+    color: var(--black);
+}
+
+.btn-secondary:hover {
+    opacity: 0.9;
+}

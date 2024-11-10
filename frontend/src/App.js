@@ -1,20 +1,26 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import StudentList from './components/StudentList';
-import StudentForm from './components/StudentForm';
 import Navbar from './components/Navbar';
-import './App.css';
+import Home from './components/Home';
+import SignUp from './components/SignUp';
+import Register from './components/Register';
+import SearchSubject from './components/SearchSubject';
+import SearchTutor from './components/SearchTutor';
+import BookAppointment from './components/BookAppointment';
+import './styles/App.css';
 
 function App() {
     return (
         <Router>
-            <Navbar />
-            <div>
-                <h1>Tutor Booking System</h1>
+            <div className="app-container">
+                <Navbar />
                 <Routes>
-                    <Route path="/" element={<StudentList />} />
-                    <Route path="/add-student" element={<StudentForm />} />
-                    {/* other routes */}
+                    <Route path="/" element={<Home />} />
+                    <Route path="/signup" element={<SignUp />} />
+                    <Route path="/register" element={<Register />} />
+                    <Route path="/search-subject" element={<SearchSubject />} />
+                    <Route path="/search-tutor" element={<SearchTutor />} />
+                    <Route path="/book-appointment" element={<BookAppointment />} />
                 </Routes>
             </div>
         </Router>
