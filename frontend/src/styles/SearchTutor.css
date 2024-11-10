@@ -1,0 +1,30 @@
+.search-tutor-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.filters-section {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.filters-section select {
+    padding: 0.5rem;
+    border: 1px solid var(--light-blue);
+    border-radius: 4px;
+}
+
+.tutors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.tutor-card {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
